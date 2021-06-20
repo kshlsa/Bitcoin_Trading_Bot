@@ -27,8 +27,8 @@ repeat {
   #source("./Criptotrading_test/emailing.R")
   #source("C:/Users/satvi/OneDrive/Desktop/TradingBotInR/.R")
   #source("./Criptotrading_test/indication.R")
-  source("C:/Users/satvi/OneDrive/Desktop/TradingBotInR/emailing.R")
-  source("C:/Users/satvi/OneDrive/Desktop/TradingBotInR/indication.R")
+  source("C:/Users/satvi/OneDrive/Desktop/TradingBotInR/email.R")
+  source("C:/Users/satvi/OneDrive/Desktop/TradingBotInR/prediction.R")
   
   # API keys
   
