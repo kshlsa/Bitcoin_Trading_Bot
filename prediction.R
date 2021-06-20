@@ -18,20 +18,17 @@ data <- binance_klines('BTCUSDT', interval = '5m')
 precioBTC <- binance_coins_prices(unit = "USDT")  %>%
   filter(symbol == "BTC")
 precioBTC$usd
-
 head(data)
 str(data)
 x <- data$open_time
 y <- data %>% dplyr::select(open, high, low, close) %>% as.matrix()
-
-# Candlestick
 
 data %>% plot_ly(x = data$open_time, type="candlestick",
                  open = data$open, close = data$close,
                  high = data$high, low = data$low) %>%
   layout(title = "Candlestick Chart")
 
-# MACD
+#MACD
 
 macd <- MACD(data[,"close"], 12, 26, 9, maType="EMA" )
 macd
